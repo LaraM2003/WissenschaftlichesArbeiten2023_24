@@ -25,7 +25,7 @@ titanic_aufbereitet <- titanic %>%
     ungroup () %>%
     # Extrahiere und erstelle Deck-Variable
     mutate(Deck = str_extract(Cabin, "[A-Za-z](?=[0-9])")) %>%
-    mutate(Zimmer = gsub("[[:alpha:]]", "", Cabin)) %>% # Hilfsvariable Zimmer
+    mutate(Zimmer = gsub(" ", "",gsub("[[:alpha:]]", "", Cabin))) %>% # Hilfsvariable Zimmer
     # Extrahiere und erstelle Zimmer-Spalten
     separate(Zimmer, into = (c("Zimmer_1", "Zimmer_2", "Zimmer_3", "Zimmer_4")), sep = " ") %>%
     mutate(across(c("Zimmer_1", "Zimmer_2", "Zimmer_3", "Zimmer_4"), as.numeric)) %>%
