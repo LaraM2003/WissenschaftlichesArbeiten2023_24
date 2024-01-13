@@ -25,14 +25,14 @@ titanic_aufbereitet <- titanic %>%
     ungroup () %>%
     # Extrahiere und erstelle Deck-Variable
     mutate(Deck = str_extract(Cabin, "[A-Za-z](?=[0-9])")) %>%
-    mutate(Zimmer = gsub(" ", "",gsub("[[:alpha:]]", "", Cabin))) %>% # Hilfsvariable Zimmer
-    # Extrahiere und erstelle Zimmer-Spalten
-    separate(Zimmer, into = (c("Zimmer_1", "Zimmer_2", "Zimmer_3", "Zimmer_4")), sep = " ") %>%
-    mutate(across(c("Zimmer_1", "Zimmer_2", "Zimmer_3", "Zimmer_4"), as.numeric)) %>%
+    mutate(Room = gsub(" ", "",gsub("[[:alpha:]]", "", Cabin))) %>% # Hilfsvariable Room 
+    # Extrahiere und erstelle Room-Spalten
+    separate(Room, into = (c("Room_1", "Room_2", "Room_3", "Room_4")), sep = " ") %>%
+    mutate(across(c("Room_1", "Room_2", "Room_3", "Room_4"), as.numeric)) %>%
     # Bestimmme Seite laut Zimmernummer
-    mutate(across(c("Zimmer_1", "Zimmer_2", "Zimmer_3", "Zimmer_4"),
-                  function(Zimmer)
-                      ifelse(Zimmer  %% 2 == 1, "Steuerbord", "Backbord"))) %>%
+    mutate(across(c("Room_1", "Room_2", "Room_3", "Room_4"),
+                  function(Room)
+                      ifelse(Room  %% 2 == 1, "Starboard", "Port"))) %>%
     # Waehle vorgegebene Spalten aus
     select(!c("PassengerId", "Name", "Ticket", "Cabin"))
 
