@@ -6,6 +6,25 @@
 ###### Aufgabe 2 - Skript A
 
 
+### iv
+
+# Beschreibung: Funktion, welche für zwei Variablen eine deskriptive bivariate 
+#               Statistik berechnet und ausgibt
+# Input:        metrisch - Vektor mit Merkmalsausprägungen eines metrischen
+#                          Merkmals
+#               dichotom - Vektor mit Merkmalsausprägungen eines dichotomen
+#                          Merkmals
+# Output:       result   - 
+
+iv <- function(metrisch, dichotom){
+  if (length(metrisch) != length(dichotom)){
+    stop("Die Vektoren sind unterschiedlich lang")
+  }
+  
+  
+  
+  plot(metrisch, dichotom)
+}
 
 ### v
 
