@@ -21,7 +21,7 @@ Skript A - ?
 
 
 
-- Eine Funktion, die eine geiignete Visualisierung von drei oder vier kategorialen Variablen erstellt
+- Eine Funktion, die eine geiignete Visualisierung von drei oder vier kategorialen Variablen erstellt (Lara)
 
 
 
