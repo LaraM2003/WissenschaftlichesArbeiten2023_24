@@ -5,6 +5,7 @@
 
 ###### Aufgabe 2 - Skript A
 
+library(ggplot2)
 
 ### iv
 
@@ -22,8 +23,35 @@ iv <- function(metrisch, dichotom){
   }
   
   
+  daten <- data.frame(metrisch, dichotom)
   
-  plot(metrisch, dichotom)
+  # Visualisierung
+  ggplot(daten) +
+    aes(y = dichotom, x = metrisch) +
+    geom_boxplot()
+  
+  
+  
+  # Einteilung nach dichotom
+  dichotomGruppe1 <- daten[which(daten[,2] == daten[1,2]), ]
+  dichotomGruppe2 <- daten[which(daten[,2] != daten[1,2]), ]
+  
+  tabelle <- matrix(0, nrow = 3, ncol = 2)
+  colnames(tabelle) <- c(dichotomGruppe1[1,2], dichotomGruppe2[1,2])
+  rownames(tabelle) <- c("mittel", "varianz", "standardabweichung")
+  
+  # Mittelwerte gruppiert nach dichotom
+  tabelle[1,] <- c(mean(dichotomGruppe1[,1]), mean(dichotomGruppe2[,1]))
+  
+  # Varianzen gruppiert nach dichotom
+  tabelle[2,] <- c(var(dichotomGruppe1[,1]), var(dichotomGruppe2[,1]))
+  
+  # standardabweichung gruppiert nach dichotom
+  tabelle[3,] <- c(sd(dichotomGruppe1[,1]), sd(dichotomGruppe2[,1]))
+  
+  
+  return(list("Kennzahlen aufgeteilt nach dichotom" = tabelle))
+  
 }
 
 ### v
