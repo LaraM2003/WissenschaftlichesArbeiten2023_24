@@ -6,6 +6,7 @@
 ###### Aufgabe 2 - Skript A
 
 library(ggplot2)
+library(gridExtra)
 
 ### iv
 
@@ -18,6 +19,8 @@ library(ggplot2)
 # Output:       result   - 
 
 iv <- function(metrisch, dichotom){
+  
+  # prüft, ob beide Merkmale die gleiche Zahl an Beobachtungen haben
   if (length(metrisch) != length(dichotom)){
     stop("Die Vektoren sind unterschiedlich lang")
   }
@@ -26,11 +29,12 @@ iv <- function(metrisch, dichotom){
   daten <- data.frame(metrisch, dichotom)
   
   # Visualisierung
-  ggplot(daten) +
-    aes(y = dichotom, x = metrisch) +
-    geom_boxplot()
+  plot1 <- ggplot(daten) +
+    aes(x = metrisch, col = dichotom) +
+    geom_boxplot() +
+    scale_color_manual(values = c("red2", "red4"))
   
-  
+  print(plot1)
   
   # Einteilung nach dichotom
   dichotomGruppe1 <- daten[which(daten[,2] == daten[1,2]), ]
@@ -49,24 +53,47 @@ iv <- function(metrisch, dichotom){
   # standardabweichung gruppiert nach dichotom
   tabelle[3,] <- c(sd(dichotomGruppe1[,1]), sd(dichotomGruppe2[,1]))
   
-  
   return(list("Kennzahlen aufgeteilt nach dichotom" = tabelle))
   
 }
 
+
+# Beispiel Aufruf
+iv(metrisch = titanic_aufbereitet$Age,
+   dichotom = titanic_aufbereitet$Survived)
+
 ### v
 
-## Grafik 1 - Verteilung Geschlecht
-plot(table(titanic_aufbereitet$Sex)) ### noch schöner machen
+# Beschreibung: plottet für vier kategoriale Merkmal Balkendiagramme
+# Input:        dataframe mit vier kategorialen Merkmalen, benannt "a" - "d"
+# output:       (Graphen)
+
+v <- function(kategorial){
+  
+    # erstellt die 4 plots
+    plot1 <- ggplot(kategorial) +
+      aes(x = a) +
+      geom_bar(fill = "red4")
+  
+    plot2 <- ggplot(kategorial) +
+      aes(x = b) +
+      geom_bar(fill = "red4")
+    
+    plot3 <- ggplot(kategorial) +
+      aes(x = c) +
+      geom_bar(fill = "red4")
+    
+    plot4 <- ggplot(kategorial) +
+      aes(x = d) +
+      geom_bar(fill = "red4")
+  
+  # plottet die vier plots
+  grid.arrange(plot1, plot2, plot3, plot4, ncol = 2, nrow = 2)
+}
 
 
-## Grafik 2 - Verteilung Embarked
-plot(table(titanic_aufbereitet$Embarked)) ### noch schöner machen
-
-
-## Grafik 3 - Verteilung pClass
-plot(table(titanic_aufbereitet$Pclass)) ### noch schöner machen
-
-
-## Grafik 4 - Verteilung survived
-plot(table(titanic_aufbereitet$Survived)) ### noch schöner machen
+# beispiel Aufruf
+v(data.frame("a" = titanic_aufbereitet$Survived, 
+             "b" = titanic_aufbereitet$Sex, 
+             "c" = titanic_aufbereitet$Embarked,
+             "d" = titanic_aufbereitet$Pclass))
