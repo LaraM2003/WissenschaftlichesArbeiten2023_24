@@ -9,7 +9,7 @@ Aufgabe 1 - Henry und Alain
 
 Aufgabe 2
 
-Skript A - ?
+Skript A
 
 - Eine Funktion, die verschiedene geeignete deskriptive Statistiken für metische Variablen berechnet und ausgibt
 
@@ -17,7 +17,11 @@ Skript A - ?
 - Eine Funktion, die verschiedene geeignete deskriptive Statistiken für kategorielle Variablen berechnet und ausgibt
 
 
-- Eine Funktion, die verschiedene geeignete bivariate Statistiken für den ZUsammenhang zwischen zwei kategorielle Variablen berechnet und ausgibt
+- Eine Funktion, die verschiedene geeignete bivariate Statistiken für den Zusammenhang zwischen zwei kategorielle Variablen berechnet und ausgibt 
+
+
+
+- Eine Funktion, die geeignete deskriptive bivariate Statistiken für den Zusammengang zwischen einer metrischen und einer dichotomen Variablen berechnet und ausgibt (Lara)
 
 
 
