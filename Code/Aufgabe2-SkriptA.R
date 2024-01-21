@@ -8,7 +8,36 @@
 library(ggplot2)
 library(gridExtra)
 
+###  i
+
+# Funktion zur Berechnung mehrerer deskr.Statistiken fuer metrische Variablen
+i <- function(metrics){
+  # Sortierung zur einfacheren Bestimmung mancher Werte
+  sortedm <- quickSort(metrics)
+  # Dataframe zur Darstellung der Ergebnisse
+  data.frame(
+    "Minimum"= sortedm[1], "Maximum"= sortedm[length(metrics)], 
+    "Mean"= sum(metrics)/length(metrics),
+    "Median"= sum(sortedm)/length(metrics)
+  )
+}
+
+###  ii
+
+# Funktion zur Berechnung mehrerer deskr.Statistiken fuer kategoriale Variablen
+
+ii <- function(categorials){
+  # Dataframe zur Darstellung der Ergebnisse
+  data.frame(
+    "Category"= unique(categorials), 
+    "Count"= as.numeric(table(useNA ="ifany", categorials)),
+    "Percent"= as.numeric(table(useNA ="ifany", categorials))
+    /length(categorials)
+  )
+}
+
 ### iv
+
 
 # Beschreibung: Funktion, welche für zwei Variablen eine deskriptive bivariate 
 #               Statistik berechnet und ausgibt
