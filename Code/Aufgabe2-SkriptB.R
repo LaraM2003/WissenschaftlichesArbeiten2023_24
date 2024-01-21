@@ -10,6 +10,6 @@ quickSort <- function(arr) {
         equal <- arr[arr == pivot]
         greater <- arr[arr > pivot]
         
-        return(c(quick_sort(smaller), equal, quick_sort(greater)))
+        return(c(quickSort(smaller), equal, quickSort(greater)))
     }
 }
