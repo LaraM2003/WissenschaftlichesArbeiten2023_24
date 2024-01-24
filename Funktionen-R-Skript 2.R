@@ -10,10 +10,6 @@
 #Helfer-Funktion für "Funktionen-R-Skript 1"
 helper_function <- function(data) {
   
-  # Diese Funktion führt eine spezifische Aufgabe für die Analyse durch
-  # Hier könnten weitere Hilfsfunktionen oder Code integriert werden
-  # ...
-  
   #Berechnung der Anzahl fehlender Werte in einem bestimmten Datensatz
   missing_values_count <- sum(is.na(data))
   
