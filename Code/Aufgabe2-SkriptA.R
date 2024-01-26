@@ -81,6 +81,7 @@ iv <- function(metrisch, dichotom){
   
   # standardabweichung gruppiert nach dichotom
   tabelle[3,] <- c(sd(dichotomGruppe1[,1]), sd(dichotomGruppe2[,1]))
+
   
   return(list("Kennzahlen aufgeteilt nach dichotom" = tabelle))
   
@@ -93,13 +94,13 @@ iv(metrisch = titanic_aufbereitet$Age,
 
 ### v
 
-# Beschreibung: plottet für vier kategoriale Merkmal Balkendiagramme
-# Input:        dataframe mit vier kategorialen Merkmalen, benannt "a" - "d"
+# Beschreibung: plottet für drei kategoriale Merkmal Balkendiagramme
+# Input:        dataframe mit vier kategorialen Merkmalen, benannt "a" - "c"
 # output:       (Graphen)
 
 v <- function(kategorial){
   
-    # erstellt die 4 plots
+    # erstellt die 3 plots
     plot1 <- ggplot(kategorial) +
       aes(x = a) +
       geom_bar(fill = "red4")
@@ -111,18 +112,13 @@ v <- function(kategorial){
     plot3 <- ggplot(kategorial) +
       aes(x = c) +
       geom_bar(fill = "red4")
-    
-    plot4 <- ggplot(kategorial) +
-      aes(x = d) +
-      geom_bar(fill = "red4")
   
   # plottet die vier plots
-  grid.arrange(plot1, plot2, plot3, plot4, ncol = 2, nrow = 2)
+  grid.arrange(plot1, plot2, plot3, ncol = 2, nrow = 2)
 }
 
 
 # beispiel Aufruf
 v(data.frame("a" = titanic_aufbereitet$Survived, 
-             "b" = titanic_aufbereitet$Sex, 
-             "c" = titanic_aufbereitet$Embarked,
-             "d" = titanic_aufbereitet$Pclass))
+             "b" = titanic_aufbereitet$Sex,
+             "c" = titanic_aufbereitet$Pclass))
