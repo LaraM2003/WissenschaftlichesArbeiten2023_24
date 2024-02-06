@@ -73,10 +73,35 @@ iv(titanic_aufbereitet$Fare, titanic_aufbereitet$Survived)
 # bestand.
 
 
-# Fatima Fatima Fatima Fatima Fatima Fatima Fatima Fatima Fatima Fatima Fatima
 
-# Zusammenhang Geschlecht der Passagiere und ihre Überlebensrate
 
+# Als nächstes analysieren wir die Verbindung zwischen dem Geschlecht der 
+# Passagiere und ihrem Überleben.
+
+ii(titanic_aufbereitet$Sex)
+# Ungefähr 35% der Passagiere (314) waren männlich, während 64% (577) weiblich 
+# waren.
+
+iii(titanic_aufbereitet$Sex, titanic_aufbereitet$Survived)
+
+# Zur kurzen Erinnerung/Erklärung:
+
+# 0           - gestorben
+# 1           - überlebt
+# kategorial1 - Merkmal Geschlecht
+# kategorial2 - Merkmal Überleben
+
+
+# Insbesondere in der zweiten Kreuztabelle ist deutlich zu erkennen, dass die 
+# Mehrheit der Frauen überlebt hat (233:81), während die meisten Männer 
+# gestorben sind (468:109). Der Chis-Quadrat-Test untermauert dies durch einen 
+# P-Wert von "< 2.2e-16", was darauf hinweist, dass die Standard-Nullhypothese 
+# (die Annahme, dass die Variablen unabhängig sind) abgelehnt werden sollte. 
+# Somit besteht höchstwahrscheinlich eine Abhängigkeit zwischen den Variablen.
+
+# Folglich lässt sich feststellen, dass das Geschlecht einen Einfluss auf die 
+# Überlebenschancen der Passagiere der Titanic hatte. Frauen überlebten mit 
+# einer höheren Wahrscheinlichkeit im Vergleich zu Männern.
 
 
 
