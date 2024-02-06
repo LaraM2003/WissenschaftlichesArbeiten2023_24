@@ -5,10 +5,17 @@
 
 ###### Aufgabe 2 - Skript A
 
+# Lade Pakete
 library(ggplot2)
 library(gridExtra)
+# Lade Hilfsfunktionen
+source("Code/Aufgabe2-SkriptB.R")
+
+## An Alle: Bitte sprechende Funktionsnamen waehlen (und dann bitte ueberall im
+# Code aendern; auch in den anderen Skripts)
 
 ###  i
+## Funktionendokumentatian fehlt!
 
 
 # Funktion zur Berechnung mehrerer deskr.Statistiken fuer metrische Variablen
@@ -17,14 +24,16 @@ i <- function(metrics){
   sortedm <- quickSort(metrics)
   # Dataframe zur Darstellung der Ergebnisse
   data.frame(
-    "Minimum"= sortedm[1], "Maximum"= sortedm[length(metrics)], 
+    "Minimum"= sortedm[1], 
+    "Maximum"= sortedm[length(metrics)], 
     "Mean"= sum(metrics)/length(metrics),
-    "Median"= sum(sortedm)/length(metrics)
+    "Median"= sum(sortedm)/length(metrics) ## AK: Median ist falsch
   )
 }
 
 ###  ii
-
+## AK: Funktionendokumentatian fehlt!
+## AK: Bitte sprechende Funktionsnamen waehlen
 # Funktion zur Berechnung mehrerer deskr.Statistiken fuer kategoriale Variablen
 
 ii <- function(categorials){
@@ -37,6 +46,7 @@ ii <- function(categorials){
   )
 }
 
+
 ### iii
 
 
@@ -45,7 +55,7 @@ ii <- function(categorials){
 #               kategorialen Variablen zu analysieren.
 # Input:        kategorial1 & kategorial2 - Vektor, der die Ausprägungen eines 
 #               kategorialen Merkmals enthält.
-# Output:       result
+# Output:       result ## AK: Was sagen denn die Tabellen aus?
 
 
 iii <- function(kategorial1, kategorial2){
@@ -63,15 +73,16 @@ iii <- function(kategorial1, kategorial2){
 
 
 ### iv
-
-
+## AK: Umlaute bitte mit ae, oe, ue umschreiben
 # Beschreibung: Funktion, welche für zwei Variablen eine deskriptive bivariate 
 #               Statistik berechnet und ausgibt
 # Input:        metrisch - Vektor mit Merkmalsausprägungen eines metrischen
 #                          Merkmals
 #               dichotom - Vektor mit Merkmalsausprägungen eines dichotomen
 #                          Merkmals
-# Output:       result   - 
+# Output:       result   - ## AK: Was sagt mir denn die ausgegebene Tabelle?
+
+
 
 iv <- function(metrisch, dichotom){
   
@@ -122,7 +133,7 @@ iv(metrisch = titanic_aufbereitet$Age,
 
 # Beschreibung: plottet für drei kategoriale Merkmal Balkendiagramme
 # Input:        dataframe mit vier kategorialen Merkmalen, benannt "a" - "c"
-# output:       (Graphen)
+# output:       (Graphen) ## AK: Auch hier was zeigen mir die Plots? X-Y-Achsen?
 
 v <- function(kategorial){
   
