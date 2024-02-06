@@ -22,4 +22,20 @@ quickSort <- function(arr) {
     }
 }
 
+# Median Algorithmus
+#       Zur berechnung des Medians eines Vektors mit numerischen Werten.
+# Eingabe:
+#       numr: Vektor mit numerischen Eintraegen.
+# Ausgabe:
+#       Median des Vektors.
+
+newMedian <- function(numr) {
+  numr <- quickSort(numr)
+  if((length(numr) %% 2 )== 0) {
+    return((numr[length(numr) / 2] + numr[(length(numr) / 2) + 1]) /2)
+  }
+  else {
+    return(numr[(length(numr) + 1)/ 2])
+  }
+}
 ## AK: weitere Hilfsfunktionen bitte hier eingfuegen (inkl. Doku)
