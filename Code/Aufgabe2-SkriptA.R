@@ -11,18 +11,22 @@ library(gridExtra)
 # Lade Hilfsfunktionen
 source("Code/Aufgabe2-SkriptB.R")
 
-## AK: An Alle: Bitte sprechende Funktionsnamen waehlen (und dann bitte ueberall 
-#   im Code aendern; auch in den anderen Skripts)
+## An Alle: Bitte sprechende Funktionsnamen waehlen (und dann bitte ueberall im
+# Code aendern; auch in den anderen Skripts)
 ## AK: ich wuerde die Beispielaufrufe auskommentieren oder besser loeschen.
 # Skripte sind so nicht alleinstehend lauffaehig bzw. werfen Fehler, da man 
 # davon aussgeht das der Datensatz geladen wurde.
 
 ###  i
-## Funktionendokumentatian fehlt!
+# Beschreibung: Eine Funktion, die deskriptive Statistiken fuer metrische
+#               Variablen berechnet und ausgibt.
+# Input:        metrics - Vektor mit metrischen Daten
+# Output:       Angaben zum Minimum,Maximum, arithm.Mittel und Median der
+#               Werte.
 
 
 # Funktion zur Berechnung mehrerer deskr.Statistiken fuer metrische Variablen
-i <- function(metrics){
+statsmetric <- function(metrics){
   # Sortierung zur einfacheren Bestimmung mancher Werte
   sortedm <- quickSort(metrics)
   # Dataframe zur Darstellung der Ergebnisse
@@ -30,16 +34,18 @@ i <- function(metrics){
     "Minimum"= sortedm[1], 
     "Maximum"= sortedm[length(metrics)], 
     "Mean"= sum(metrics)/length(metrics),
-    "Median"= sum(sortedm)/length(metrics) ## AK: Median ist falsch
+    "Median"= newMedian(metrics)
   )
 }
 
 ###  ii
-## AK: Funktionendokumentatian fehlt!
-## AK: Bitte sprechende Funktionsnamen waehlen
-# Funktion zur Berechnung mehrerer deskr.Statistiken fuer kategoriale Variablen
+# Beschreibung: Eine Funktion, die deskriptive Statistiken fuer kategoriale
+#               Variablen berechnet und ausgibt.
+# Input:        categorials - Vektor mit kategorischen Daten
+# Output:       Angaben zu jedem einzigartigem Eintrag des Vektors. Dazu jeweils
+#               Anzahl und relative Haeufigkeit.
 
-ii <- function(categorials){
+statscategorials <- function(categorials){
   # Dataframe zur Darstellung der Ergebnisse
   data.frame(
     "Category"= unique(categorials), 
