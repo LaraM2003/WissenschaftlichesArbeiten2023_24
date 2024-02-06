@@ -10,6 +10,7 @@ library(gridExtra)
 
 ###  i
 
+
 # Funktion zur Berechnung mehrerer deskr.Statistiken fuer metrische Variablen
 i <- function(metrics){
   # Sortierung zur einfacheren Bestimmung mancher Werte
@@ -35,6 +36,31 @@ ii <- function(categorials){
     /length(categorials)
   )
 }
+
+### iii
+
+
+# Beschreibung: Eine Funktion, die passende deskriptive bivariate Statistiken 
+#               erstellt und ausgibt, um den Zusammenhang zwischen zwei 
+#               kategorialen Variablen zu analysieren.
+# Input:        kategorial1 & kategorial2 - Vektor, der die Ausprägungen eines 
+#               kategorialen Merkmals enthält.
+# Output:       result
+
+
+iii <- function(kategorial1, kategorial2){
+  
+  # Erstellung einer Kreuztabelle
+  cross_table <- table(kategorial1, kategorial2)
+  print(cross_table)
+  
+  
+  #Durchführung des Chi-Quadrat-Tests
+  chi_square_test <- chisq.test(cross_table_value)
+  print(chi_square_test)
+}
+
+
 
 ### iv
 
