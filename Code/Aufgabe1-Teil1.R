@@ -52,4 +52,5 @@ lesenUndTransformieren <- function(path, filename){
 titanic_aufbereitet <- lesenUndTransformieren("Data/", "titanic.csv")
 
 # Aufbereiteten Datensatz exportieren
-write.csv(titanic_aufbereitet, "Data/titanic_aufbereitet.csv")
+# Bei Bedarf bitte auskommentieren
+#write.csv(titanic_aufbereitet, "Data/titanic_aufbereitet.csv")
