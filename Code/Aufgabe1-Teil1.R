@@ -9,7 +9,7 @@ library("tidyr")
 library("stringr")
 
 # Daten einlesen
-titanic <- read.csv("titanic.csv")
+titanic <- read.csv("Data/titanic.csv")
 
 # Variablen transformieren
 titanic_aufbereitet <- titanic %>%
@@ -38,4 +38,4 @@ titanic_aufbereitet <- titanic %>%
 
 
 # Aufbereiteten Datensatz exportieren
-write.csv(titanic_aufbereitet, "titanic_aufbereitet.csv")
+write.csv(titanic_aufbereitet, "Data/titanic_aufbereitet.csv")
