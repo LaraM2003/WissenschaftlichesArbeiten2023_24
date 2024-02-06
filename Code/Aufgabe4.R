@@ -4,8 +4,9 @@
 ###############################################################################
 
 
-##### Hinweis: Bitte zuvor die Funktionen aus Aufgabe 2 Skript A/B laden. Danke
-
+# Funktionen und Hilfsfunktionen laden
+source("Code/Aufgabe2-SkriptA.R")
+source("Code/Aufgabe2-SkriptB.R")
 
 
 ii(titanic_aufbereitet$Survived)
