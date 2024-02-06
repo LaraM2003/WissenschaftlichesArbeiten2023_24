@@ -5,12 +5,9 @@
 
 
 # Funktionen und Hilfsfunktionen laden
-source("Code/Aufgabe2-SkriptA.R")
-source("Code/Aufgabe2-SkriptB.R")
 source("Code/Aufgabe1-Teil1.R")
+source("Code/Aufgabe2-SkriptA.R")
 
-# Daten einlesen und transformieren
-titanic_aufbereitet <- lesenUndTransformieren("Data/", "titanic.csv")
 
 ii(titanic_aufbereitet$Survived)
 # Bemerkung: 1 - Überlebt; 0 - Gestorben
