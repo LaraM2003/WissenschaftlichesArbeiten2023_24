@@ -9,7 +9,7 @@ source("Code/Aufgabe1-Teil1.R")
 source("Code/Aufgabe2-SkriptA.R")
 
 
-ii(titanic_aufbereitet$Survived)
+statscategorials(titanic_aufbereitet$Survived)
 # Bemerkung: 1 - Überlebt; 0 - Gestorben
 
 # Den Untergang der Titanic überlebten 342 (ca. 38.38%) der Passagiere. 549
@@ -43,7 +43,7 @@ v(data.frame("a" = titanic_aufbereitet$Survived,
 # Situation der Passagiere.
 
 
-i(titanic_aufbereitet$Fare)
+statsmetric(titanic_aufbereitet$Fare)
 # Minimum = 0
 # Maximum = 512.3292
 # Mean    = 32.20421
@@ -79,7 +79,7 @@ iv(titanic_aufbereitet$Fare, titanic_aufbereitet$Survived)
 # Als nächstes analysieren wir die Verbindung zwischen dem Geschlecht der 
 # Passagiere und ihrem Überleben.
 
-ii(titanic_aufbereitet$Sex)
+statscategorials(titanic_aufbereitet$Sex)
 # Ungefähr 35% der Passagiere (314) waren männlich, während 64% (577) weiblich 
 # waren.
 
@@ -109,7 +109,7 @@ iii(titanic_aufbereitet$Sex, titanic_aufbereitet$Survived)
 # Zum Abschluss betrachten wir den Zusammenhang zwischen dem Alter der
 # Passagiere und ihres Überlebens des Untergang.
 
-i(titanic_aufbereitet$Age)
+statsmetric(titanic_aufbereitet$Age)
 # Minimum = 0.42
 # Maximum = 80
 # Mean    = 29.75466
