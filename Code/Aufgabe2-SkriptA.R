@@ -11,8 +11,11 @@ library(gridExtra)
 # Lade Hilfsfunktionen
 source("Code/Aufgabe2-SkriptB.R")
 
-## An Alle: Bitte sprechende Funktionsnamen waehlen (und dann bitte ueberall im
-# Code aendern; auch in den anderen Skripts)
+## AK: An Alle: Bitte sprechende Funktionsnamen waehlen (und dann bitte ueberall 
+#   im Code aendern; auch in den anderen Skripts)
+## AK: ich wuerde die Beispielaufrufe auskommentieren oder besser loeschen.
+# Skripte sind so nicht alleinstehend lauffaehig bzw. werfen Fehler, da man 
+# davon aussgeht das der Datensatz geladen wurde.
 
 ###  i
 ## Funktionendokumentatian fehlt!
