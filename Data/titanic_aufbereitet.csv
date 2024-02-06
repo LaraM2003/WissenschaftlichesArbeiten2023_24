@@ -26,7 +26,7 @@
 "25","0","3","female",8,3,1,21.075,"S","Miss",NA,NA,NA,NA,NA
 "26","1","3","female",38,1,5,31.3875,"S","Mrs",NA,NA,NA,NA,NA
 "27","0","3","male",32.3680904522613,0,0,7.225,"C","Mr",NA,NA,NA,NA,NA
-"28","0","1","male",19,3,2,263,"S","Mr","C","Starboard",NA,NA,NA
+"28","0","1","male",19,3,2,263,"S","Mr","C","Starboard","Starboard","Starboard",NA
 "29","1","3","female",21.7739726027397,0,0,7.8792,"Q","Miss",NA,NA,NA,NA,NA
 "30","0","3","male",32.3680904522613,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "31","0","1","male",40,0,0,27.7208,"C","Don",NA,NA,NA,NA,NA
@@ -74,7 +74,7 @@
 "73","0","2","male",21,0,0,73.5,"S","Mr",NA,NA,NA,NA,NA
 "74","0","3","male",26,1,0,14.4542,"C","Mr",NA,NA,NA,NA,NA
 "75","1","3","male",32,0,0,56.4958,"S","Mr",NA,NA,NA,NA,NA
-"76","0","3","male",25,0,0,7.65,"S","Mr","G","Starboard",NA,NA,NA
+"76","0","3","male",25,0,0,7.65,"S","Mr","G",NA,"Starboard",NA,NA
 "77","0","3","male",32.3680904522613,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "78","0","3","male",32.3680904522613,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "79","1","2","male",0.83,0,2,29,"S","Master",NA,NA,NA,NA,NA
@@ -87,7 +87,7 @@
 "86","1","3","female",33,3,0,15.85,"S","Mrs",NA,NA,NA,NA,NA
 "87","0","3","male",16,1,3,34.375,"S","Mr",NA,NA,NA,NA,NA
 "88","0","3","male",32.3680904522613,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
-"89","1","1","female",23,3,2,263,"S","Miss","C","Starboard",NA,NA,NA
+"89","1","1","female",23,3,2,263,"S","Miss","C","Starboard","Starboard","Starboard",NA
 "90","0","3","male",24,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "91","0","3","male",29,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "92","0","3","male",20,0,0,7.8542,"S","Mr",NA,NA,NA,NA,NA
@@ -96,7 +96,7 @@
 "95","0","3","male",59,0,0,7.25,"S","Mr",NA,NA,NA,NA,NA
 "96","0","3","male",32.3680904522613,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "97","0","1","male",71,0,0,34.6542,"C","Mr","A","Starboard",NA,NA,NA
-"98","1","1","male",23,0,1,63.3583,"C","Mr","D","Port",NA,NA,NA
+"98","1","1","male",23,0,1,63.3583,"C","Mr","D","Port","Port",NA,NA
 "99","1","2","female",34,0,1,23,"S","Mrs",NA,NA,NA,NA,NA
 "100","0","2","male",34,1,0,26,"S","Mr",NA,NA,NA,NA,NA
 "101","0","3","female",28,0,0,7.8958,"S","Miss",NA,NA,NA,NA,NA
@@ -117,7 +117,7 @@
 "116","0","3","male",21,0,0,7.925,"S","Mr",NA,NA,NA,NA,NA
 "117","0","3","male",70.5,0,0,7.75,"Q","Mr",NA,NA,NA,NA,NA
 "118","0","2","male",29,1,0,21,"S","Mr",NA,NA,NA,NA,NA
-"119","0","1","male",24,0,1,247.5208,"C","Mr","B","Port",NA,NA,NA
+"119","0","1","male",24,0,1,247.5208,"C","Mr","B","Port","Port",NA,NA
 "120","0","3","female",2,4,2,31.275,"S","Miss",NA,NA,NA,NA,NA
 "121","0","2","male",21,2,0,73.5,"S","Mr",NA,NA,NA,NA,NA
 "122","0","3","male",32.3680904522613,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
@@ -127,7 +127,7 @@
 "126","1","3","male",12,1,0,11.2417,"C","Master",NA,NA,NA,NA,NA
 "127","0","3","male",32.3680904522613,0,0,7.75,"Q","Mr",NA,NA,NA,NA,NA
 "128","1","3","male",24,0,0,7.1417,"S","Mr",NA,NA,NA,NA,NA
-"129","1","3","female",21.7739726027397,1,1,22.3583,"C","Miss","E","Starboard",NA,NA,NA
+"129","1","3","female",21.7739726027397,1,1,22.3583,"C","Miss","E",NA,"Starboard",NA,NA
 "130","0","3","male",45,0,0,6.975,"S","Mr",NA,NA,NA,NA,NA
 "131","0","3","male",33,0,0,7.8958,"C","Mr",NA,NA,NA,NA,NA
 "132","0","3","male",20,0,0,7.05,"S","Mr",NA,NA,NA,NA,NA
@@ -296,21 +296,21 @@
 "295","0","3","male",24,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "296","0","1","male",32.3680904522613,0,0,27.7208,"C","Mr",NA,NA,NA,NA,NA
 "297","0","3","male",23.5,0,0,7.2292,"C","Mr",NA,NA,NA,NA,NA
-"298","0","1","female",2,1,2,151.55,"S","Miss","C","Port",NA,NA,NA
+"298","0","1","female",2,1,2,151.55,"S","Miss","C","Port","Port",NA,NA
 "299","1","1","male",32.3680904522613,0,0,30.5,"S","Mr","C","Port",NA,NA,NA
-"300","1","1","female",50,0,1,247.5208,"C","Mrs","B","Port",NA,NA,NA
+"300","1","1","female",50,0,1,247.5208,"C","Mrs","B","Port","Port",NA,NA
 "301","1","3","female",21.7739726027397,0,0,7.75,"Q","Miss",NA,NA,NA,NA,NA
 "302","1","3","male",32.3680904522613,2,0,23.25,"Q","Mr",NA,NA,NA,NA,NA
 "303","0","3","male",19,0,0,0,"S","Mr",NA,NA,NA,NA,NA
 "304","1","2","female",21.7739726027397,0,0,12.35,"Q","Miss","E","Starboard",NA,NA,NA
 "305","0","3","male",32.3680904522613,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
-"306","1","1","male",0.92,1,2,151.55,"S","Master","C","Port",NA,NA,NA
+"306","1","1","male",0.92,1,2,151.55,"S","Master","C","Port","Port",NA,NA
 "307","1","1","female",21.7739726027397,0,0,110.8833,"C","Miss",NA,NA,NA,NA,NA
 "308","1","1","female",17,1,0,108.9,"C","Mrs","C","Starboard",NA,NA,NA
 "309","0","2","male",30,1,0,24,"C","Mr",NA,NA,NA,NA,NA
 "310","1","1","female",30,0,0,56.9292,"C","Miss","E","Port",NA,NA,NA
 "311","1","1","female",24,0,0,83.1583,"C","Miss","C","Port",NA,NA,NA
-"312","1","1","female",18,2,2,262.375,"C","Miss","B","Port",NA,NA,NA
+"312","1","1","female",18,2,2,262.375,"C","Miss","B","Starboard","Starboard","Starboard","Port"
 "313","0","2","female",26,1,1,26,"S","Mrs",NA,NA,NA,NA,NA
 "314","0","3","male",28,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "315","0","2","male",43,1,1,26.25,"S","Mr",NA,NA,NA,NA,NA
@@ -340,7 +340,7 @@
 "339","1","3","male",45,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "340","0","1","male",45,0,0,35.5,"S","Mr",NA,NA,NA,NA,NA
 "341","1","2","male",2,1,1,26,"S","Master","F","Port",NA,NA,NA
-"342","1","1","female",24,3,2,263,"S","Miss","C","Starboard",NA,NA,NA
+"342","1","1","female",24,3,2,263,"S","Miss","C","Starboard","Starboard","Starboard",NA
 "343","0","2","male",28,0,0,13,"S","Mr",NA,NA,NA,NA,NA
 "344","0","2","male",25,0,0,13,"S","Mr",NA,NA,NA,NA,NA
 "345","0","2","male",36,0,0,13,"S","Mr",NA,NA,NA,NA,NA
@@ -389,7 +389,7 @@
 "388","1","2","female",36,0,0,13,"S","Miss",NA,NA,NA,NA,NA
 "389","0","3","male",32.3680904522613,0,0,7.7292,"Q","Mr",NA,NA,NA,NA,NA
 "390","1","2","female",17,0,0,12,"C","Miss",NA,NA,NA,NA,NA
-"391","1","1","male",36,1,2,120,"S","Mr","B","Port",NA,NA,NA
+"391","1","1","male",36,1,2,120,"S","Mr","B","Port","Port",NA,NA
 "392","1","3","male",21,0,0,7.7958,"S","Mr",NA,NA,NA,NA,NA
 "393","0","3","male",28,2,0,7.925,"S","Mr",NA,NA,NA,NA,NA
 "394","1","1","female",23,1,0,113.275,"C","Miss","D","Port",NA,NA,NA
@@ -434,10 +434,10 @@
 "433","1","2","female",42,1,0,26,"S","Mrs",NA,NA,NA,NA,NA
 "434","0","3","male",17,0,0,7.125,"S","Mr",NA,NA,NA,NA,NA
 "435","0","1","male",50,1,0,55.9,"S","Mr","E","Port",NA,NA,NA
-"436","1","1","female",14,1,2,120,"S","Miss","B","Port",NA,NA,NA
+"436","1","1","female",14,1,2,120,"S","Miss","B","Port","Port",NA,NA
 "437","0","3","female",21,2,2,34.375,"S","Miss",NA,NA,NA,NA,NA
 "438","1","2","female",24,2,3,18.75,"S","Mrs",NA,NA,NA,NA,NA
-"439","0","1","male",64,1,4,263,"S","Mr","C","Starboard",NA,NA,NA
+"439","0","1","male",64,1,4,263,"S","Mr","C","Starboard","Starboard","Starboard",NA
 "440","0","2","male",31,0,0,10.5,"S","Mr",NA,NA,NA,NA,NA
 "441","1","2","female",45,1,1,26.25,"S","Mrs",NA,NA,NA,NA,NA
 "442","0","3","male",20,0,0,9.5,"S","Mr",NA,NA,NA,NA,NA
@@ -497,7 +497,7 @@
 "496","0","3","male",32.3680904522613,0,0,14.4583,"C","Mr",NA,NA,NA,NA,NA
 "497","1","1","female",54,1,0,78.2667,"C","Miss","D","Port",NA,NA,NA
 "498","0","3","male",32.3680904522613,0,0,15.1,"S","Mr",NA,NA,NA,NA,NA
-"499","0","1","female",25,1,2,151.55,"S","Mrs","C","Port",NA,NA,NA
+"499","0","1","female",25,1,2,151.55,"S","Mrs","C","Port","Port",NA,NA
 "500","0","3","male",24,0,0,7.7958,"S","Mr",NA,NA,NA,NA,NA
 "501","0","3","male",17,0,0,8.6625,"S","Mr",NA,NA,NA,NA,NA
 "502","0","3","female",21,0,0,7.75,"Q","Miss",NA,NA,NA,NA,NA
@@ -678,7 +678,7 @@
 "677","0","3","male",24.5,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "678","1","3","female",18,0,0,9.8417,"S","Miss",NA,NA,NA,NA,NA
 "679","0","3","female",43,1,6,46.9,"S","Mrs",NA,NA,NA,NA,NA
-"680","1","1","male",36,0,1,512.3292,"C","Mr","B","Starboard",NA,NA,NA
+"680","1","1","male",36,0,1,512.3292,"C","Mr","B","Starboard","Starboard","Starboard",NA
 "681","0","3","female",21.7739726027397,0,0,8.1375,"Q","Miss",NA,NA,NA,NA,NA
 "682","1","1","male",27,0,0,76.7292,"C","Mr","D","Starboard",NA,NA,NA
 "683","0","3","male",20,0,0,9.225,"S","Mr",NA,NA,NA,NA,NA
@@ -698,8 +698,8 @@
 "697","0","3","male",44,0,0,8.05,"S","Mr",NA,NA,NA,NA,NA
 "698","1","3","female",21.7739726027397,0,0,7.7333,"Q","Miss",NA,NA,NA,NA,NA
 "699","0","1","male",49,1,1,110.8833,"C","Mr","C","Port",NA,NA,NA
-"700","0","3","male",42,0,0,7.65,"S","Mr","G","Starboard",NA,NA,NA
-"701","1","1","female",18,1,0,227.525,"C","Mrs","C","Port",NA,NA,NA
+"700","0","3","male",42,0,0,7.65,"S","Mr","G",NA,"Starboard",NA,NA
+"701","1","1","female",18,1,0,227.525,"C","Mrs","C","Port","Port",NA,NA
 "702","1","1","male",35,0,0,26.2875,"S","Mr","E","Port",NA,NA,NA
 "703","0","3","female",18,0,1,14.4542,"C","Miss",NA,NA,NA,NA,NA
 "704","0","3","male",25,0,0,7.7417,"Q","Mr",NA,NA,NA,NA,NA
@@ -714,7 +714,7 @@
 "713","1","1","male",48,1,0,52,"S","Mr","C","Port",NA,NA,NA
 "714","0","3","male",29,0,0,9.4833,"S","Mr",NA,NA,NA,NA,NA
 "715","0","2","male",52,0,0,13,"S","Mr",NA,NA,NA,NA,NA
-"716","0","3","male",19,0,0,7.65,"S","Mr","G","Starboard",NA,NA,NA
+"716","0","3","male",19,0,0,7.65,"S","Mr","G",NA,"Starboard",NA,NA
 "717","1","1","female",38,0,0,227.525,"C","Miss","C","Starboard",NA,NA,NA
 "718","1","2","female",27,0,0,10.5,"S","Miss","E","Starboard",NA,NA,NA
 "719","0","3","male",32.3680904522613,0,0,15.5,"Q","Mr",NA,NA,NA,NA,NA
@@ -741,7 +741,7 @@
 "740","0","3","male",32.3680904522613,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "741","1","1","male",32.3680904522613,0,0,30,"S","Mr","D","Starboard",NA,NA,NA
 "742","0","1","male",36,1,0,78.85,"S","Mr","C","Port",NA,NA,NA
-"743","1","1","female",21,2,2,262.375,"C","Miss","B","Port",NA,NA,NA
+"743","1","1","female",21,2,2,262.375,"C","Miss","B","Starboard","Starboard","Starboard","Port"
 "744","0","3","male",24,1,0,16.1,"S","Mr",NA,NA,NA,NA,NA
 "745","1","3","male",31,0,0,7.925,"S","Mr",NA,NA,NA,NA,NA
 "746","0","1","male",70,1,1,71,"S","Capt","B","Port",NA,NA,NA
@@ -762,7 +762,7 @@
 "761","0","3","male",32.3680904522613,0,0,14.5,"S","Mr",NA,NA,NA,NA,NA
 "762","0","3","male",41,0,0,7.125,"S","Mr",NA,NA,NA,NA,NA
 "763","1","3","male",20,0,0,7.2292,"C","Mr",NA,NA,NA,NA,NA
-"764","1","1","female",36,1,2,120,"S","Mrs","B","Port",NA,NA,NA
+"764","1","1","female",36,1,2,120,"S","Mrs","B","Port","Port",NA,NA
 "765","0","3","male",16,0,0,7.775,"S","Mr",NA,NA,NA,NA,NA
 "766","1","1","female",51,1,0,77.9583,"S","Mrs","D","Starboard",NA,NA,NA
 "767","0","1","male",42,0,0,39.6,"C","Dr",NA,NA,NA,NA,NA
@@ -788,7 +788,7 @@
 "787","1","3","female",18,0,0,7.4958,"S","Miss",NA,NA,NA,NA,NA
 "788","0","3","male",8,4,1,29.125,"Q","Master",NA,NA,NA,NA,NA
 "789","1","3","male",1,1,2,20.575,"S","Master",NA,NA,NA,NA,NA
-"790","0","1","male",46,0,0,79.2,"C","Mr","B","Port",NA,NA,NA
+"790","0","1","male",46,0,0,79.2,"C","Mr","B","Port","Port",NA,NA
 "791","0","3","male",32.3680904522613,0,0,7.75,"Q","Mr",NA,NA,NA,NA,NA
 "792","0","2","male",16,0,0,26,"S","Mr",NA,NA,NA,NA,NA
 "793","0","3","female",21.7739726027397,8,2,69.55,"S","Miss",NA,NA,NA,NA,NA
@@ -801,7 +801,7 @@
 "800","0","3","female",30,1,1,24.15,"S","Mrs",NA,NA,NA,NA,NA
 "801","0","2","male",34,0,0,13,"S","Mr",NA,NA,NA,NA,NA
 "802","1","2","female",31,1,1,26.25,"S","Mrs",NA,NA,NA,NA,NA
-"803","1","1","male",11,1,2,120,"S","Master","B","Port",NA,NA,NA
+"803","1","1","male",11,1,2,120,"S","Master","B","Port","Port",NA,NA
 "804","1","3","male",0.42,0,1,8.5167,"C","Master",NA,NA,NA,NA,NA
 "805","1","3","male",27,0,0,6.975,"S","Mr",NA,NA,NA,NA,NA
 "806","0","3","male",31,0,0,7.775,"S","Mr",NA,NA,NA,NA,NA
@@ -871,7 +871,7 @@
 "870","1","3","male",4,1,1,11.1333,"S","Master",NA,NA,NA,NA,NA
 "871","0","3","male",26,0,0,7.8958,"S","Mr",NA,NA,NA,NA,NA
 "872","1","1","female",47,1,1,52.5542,"S","Mrs","D","Starboard",NA,NA,NA
-"873","0","1","male",33,0,0,5,"S","Mr","B","Starboard",NA,NA,NA
+"873","0","1","male",33,0,0,5,"S","Mr","B","Starboard","Starboard","Starboard",NA
 "874","0","3","male",47,0,0,9,"S","Mr",NA,NA,NA,NA,NA
 "875","1","2","female",28,1,0,24,"C","Mrs",NA,NA,NA,NA,NA
 "876","1","3","female",15,0,0,7.225,"C","Miss",NA,NA,NA,NA,NA
