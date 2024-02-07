@@ -4,7 +4,7 @@ Dieses Repository ist Inhalt der Studienleistung für den Kurs "Wissenschaftlich
 
 Aufgabeneinteilung:
 
-Aufgabe 1 - Henry und Alain
+Aufgabe 1
 
 
 Aufgabe 2
@@ -21,20 +21,19 @@ Skript A
 
 
 
-- Eine Funktion, die geeignete deskriptive bivariate Statistiken für den Zusammengang zwischen einer metrischen und einer dichotomen Variablen berechnet und ausgibt (Lara)
+- Eine Funktion, die geeignete deskriptive bivariate Statistiken für den Zusammengang zwischen einer metrischen und einer dichotomen Variablen berechnet und ausgibt
 
 
 
-- Eine Funktion, die eine geiignete Visualisierung von drei oder vier kategorialen Variablen erstellt (Lara)
-
+- Eine Funktion, die eine geiignete Visualisierung von drei oder vier kategorialen Variablen erstellt
 
 
 - Freiwillig: weitere zur Deskription und Visualisierung geeignete Funktionen
 
-Skript B - ?
+Skript B
 Helferfunktionen, die nicht selbst zur Deskription und Visualisierung der Daten verwendet werden, sondern die nur in Skript A Anwendung finden (--> interne Funktionen). Muss mindestens eine Funktion enthalten.
 
-Aufgabe 4 - Lara und Fatima
+Aufgabe 4
 
 - neues Skript erstellen
 
@@ -43,5 +42,3 @@ Aufgabe 4 - Lara und Fatima
 - analysieren (Deskription und Visualiserung) der Daten aus Aufgabe 1
 
 - jede Funktion aus Skript A mindestens einmal anwenden
-
-- 
