@@ -48,10 +48,8 @@ statsmetric <- function(metrics){
 statscategorials <- function(categorials){
   # Dataframe zur Darstellung der Ergebnisse
   data.frame(
-    "Category"= unique(categorials), 
-    "Count"= as.numeric(table(useNA ="ifany", categorials)),
-    "Percent"= as.numeric(table(useNA ="ifany", categorials))
-    /length(categorials)
+    "Category"= table(categorials),
+    "Percent"= table(categorials)/length(categorials)
   )
 }
 
@@ -75,7 +73,7 @@ iii <- function(kategorial1, kategorial2){
   
   
   #Durchführung des Chi-Quadrat-Tests
-  chi_square_test <- chisq.test(cross_table_value)
+  chi_square_test <- chisq.test(cross_table)
   print(chi_square_test)
 }
 
@@ -93,7 +91,7 @@ iii <- function(kategorial1, kategorial2){
 
 
 
-iv <- function(metrisch, dichotom){
+iv <- function(metrisch, dichotom, labelX){
   
   # prüft, ob beide Merkmale die gleiche Zahl an Beobachtungen haben
   if (length(metrisch) != length(dichotom)){
@@ -107,7 +105,8 @@ iv <- function(metrisch, dichotom){
   plot1 <- ggplot(daten) +
     aes(x = metrisch, col = dichotom) +
     geom_boxplot() +
-    scale_color_manual(values = c("red2", "red4"))
+    scale_color_manual(values = c("red2", "red4")) +
+    labs(x = labelX)
   
   print(plot1)
   
@@ -136,7 +135,7 @@ iv <- function(metrisch, dichotom){
 
 # Beispiel Aufruf
 iv(metrisch = titanic_aufbereitet$Age,
-   dichotom = titanic_aufbereitet$Survived)
+   dichotom = titanic_aufbereitet$Survived, "Alter")
 
 ### v
 
@@ -144,20 +143,23 @@ iv(metrisch = titanic_aufbereitet$Age,
 # Input:        dataframe mit vier kategorialen Merkmalen, benannt "a" - "c"
 # output:       (Graphen) ## AK: Auch hier was zeigen mir die Plots? X-Y-Achsen?
 
-v <- function(kategorial){
+v <- function(kategorial, Name1, Name2, Name3){
   
     # erstellt die 3 plots
     plot1 <- ggplot(kategorial) +
       aes(x = a) +
-      geom_bar(fill = "red4")
+      geom_bar(fill = "red4") +
+      labs(x = Name1)
   
     plot2 <- ggplot(kategorial) +
       aes(x = b) +
-      geom_bar(fill = "red4")
+      geom_bar(fill = "red4") +
+      labs(x = Name2)
     
     plot3 <- ggplot(kategorial) +
       aes(x = c) +
-      geom_bar(fill = "red4")
+      geom_bar(fill = "red4") +
+      labs(x = Name3)
   
   # plottet die vier plots
   grid.arrange(plot1, plot2, plot3, ncol = 2, nrow = 2)
@@ -168,3 +170,35 @@ v <- function(kategorial){
 v(data.frame("a" = titanic_aufbereitet$Survived, 
              "b" = titanic_aufbereitet$Sex,
              "c" = titanic_aufbereitet$Pclass))
+
+
+### vi
+
+# Beschreibung: plottet die Alters- und Geschlechtsstrukturen
+# Input:        -
+# output:       -
+vi <- function(){
+  ggplot(data = titanic_aufbereitet, aes(x = Age, fill = Sex)) + 
+    geom_histogram(binwidth = 5, color = "black") +
+    labs(
+      title = "Alters- und Geschlechterstruktur (auf der Titanic)",
+      x = "Alter (in Jahren)",
+      y = "Anzahl",
+      fill = "Geschlecht"
+    ) +
+    theme_classic() +
+    scale_fill_manual(values=c("red2", "red4"))
+}
+
+
+### vii
+
+# Beschreibung: plottet die Überleben und die Seite, auf der die Kabine lag
+# Input:        -
+# output:       -
+
+vii <- function(){
+  ggplot(data = titanic_aufbereitet, aes(x = Room_1, fill = Survived)) + 
+    geom_bar(stat = "count", color = "black") +
+    scale_fill_manual(values = c("red2", "red4"))
+}
