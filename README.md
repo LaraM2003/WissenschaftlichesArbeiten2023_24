@@ -42,3 +42,13 @@ Aufgabe 4
 - analysieren (Deskription und Visualiserung) der Daten aus Aufgabe 1
 
 - jede Funktion aus Skript A mindestens einmal anwenden
+
+Requirements:
+
+Diese R-Pakete werden in unseren Funktionen benötigt. Wir bitten darum diese zu downloaden, damit der Code auch wie gewünscht läuft.
+
+- dplyr
+- tidyr
+- stringr
+- ggplot2
+- gridExtra
