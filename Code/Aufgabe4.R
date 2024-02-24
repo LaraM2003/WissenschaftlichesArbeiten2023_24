@@ -165,3 +165,4 @@ plotRoom()
 # Wir koennen also an den vorliegenden Daten nicht wirklich ermitteln, ob die
 # Schiffsseite der Kabine einen Einfluss auf die ueberlebenswahrscheinlichkeit
 # hatte. Bei den bekannten Kabinen scheint dies aber nicht der Fall zu sein.
+
